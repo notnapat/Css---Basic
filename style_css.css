@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Chonburi&display=swap');
+
+/* div{ */
+    color:red;
+    font-weight: 100; /*ตัวหนา*/
+    
+}
+.class{
+    /* color:blue; */
+}
+#id{
+
+}
+
+div,.class,#id{ font-style: ;}
+div div div.bbb{color:green;}
+*{
+   /* เปลี่ยนทุกแทก แต่เปลี่ยนได้แค่บางอย่าง */
+   /* color:orange; */
+}
+P{
+    /* font-family: 'Charm', cursive; */
+}
+
+#aaa{
+    font-family: 'Chonburi', cursive;
+    color: red;
+    color: #39d4bc; /*ถ้าเหมือนกัน 6 ตัวใส่ 3 ตัวก็ได้  */
+    color:rgb(26, 117, 50);
+    color:rgba(26, 117, 50,0.5);  /*aคือลดความชัด*/
+    color:hsl(299, 57%, 55%); /*ลบ ° ออก */
+    color:hsla(299, 57%, 55%,0.9); /*ลบ ° ออก aคือลดความชัด */
+
+    text-decoration: none;    /*ไม่แสดงเส้น*/
+    text-decoration: underline; /*ขีดเส้นใต้ข้อความ*/
+    text-decoration: overline; /*ขีดเส้นเหนือข้อความ*/
+    text-decoration: line-through; /*ขีดเส้นทับข้อความ*/
+
+    text-align: right;
+    text-align: center;
+    text-align: left;
+    text-align: justify; /*ปรับระยะข้อความทุกบรรทัดให้เท่ากัน */
+
+    /* width: px cm % auto; */
+    /* height: px cm % auto; */
+    max-width:  ;
+    min-width:  ;
+    max-height: ;
+    min-height: ;
+
+    visibility: hidden; /*ซ่อนรูป หรืออื่นๆ แต่สถานะยังอยู่ที่เดิม !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    visibility: visible;  /*แสดงที่ซ่อนไว้*/]
+    
+
+}
+
+.border{
+    width: 150px ;
+    height: 150px;
+    background-color: #39d4bc;
+    border: solid 3px red;
+
+}
+.border2{
+    width: 350px ;
+    height: 350px;
+    background-color: #39d4bc;
+    border-style: double;
+    border-top-style: dashed;
+    border-right-color: crimson;
+    border-left-width: 10px;
+    border-bottom-left-radius: 20%;
+    border-radius: 10px 50px 40px 30px;
+    padding:10px;
+    padding-left: 30px;
+    padding: 10px 50px 30px 20px;
+    padding: auto;
+    margin: 50px;
+    margin-left: 5px;
+    background-image:url(https://cdn.pixabay.com/photo/2021/04/20/15/04/hare-6194141__340.jpg)  ;
+    background-size: auto; /*ขนาดตามต้นฉบับ*/
+    background-size: cover;/* ่ขนาดเต็มกรอบ  */
+    background-repeat: repeat-x; /*ทำซ้ำแนวนอน*/
+    background-repeat: repeat-y; /*ทำซ้ำแนวตั่ง*/
+    background-repeat: repeat ; /*'ซ้ำทั้งตั้งทั้งนอน*/
+    background-repeat: no-repeat; 
+    
+
+
+}
+body{
+    /* background-image: url('กำหนดความโค้งเส้นขอบ.png'); */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    height: 5000px;
+    /* background-attachment: fixed;  ภาพแบกกลาวอยู่ที่เดิมไม่ว่าจะเลื้อนจอไปทางไหน */
+    /* background-attachment: scroll;    ค่าเรื่มต้น */
+    background-position:  top right;
+    /* background-position: center; */
+}  
+
+.a333{
+    /* box-sizing: border-box; */
+    width: 25%;
+    height: 5%;
+    background: url('https://cdn.pixabay.com/photo/2021/08/20/15/00/road-6560656__340.jpg') /*100px repeat  fixed*/   ;
+    border: solid 5px;
+    float: left;
+
+}
+.a444{
+    
+    border: 5px solid;
+    width: 25%;
+    height: 5%;
+    margin: 10px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/06/05/07/58/butterfly-2373175__340.png);
+    background-size: 100%;
+    float: right;
+}   
+.b444{
+    clear: both;
+}
+.a555{
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/09/17/51/narcis-4916584__340.jpg);
+    border: 5px solid;
+    width: 25%;
+    height: 5%;
+    opacity: 0.2;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    background-color: #39d4bc ;
+    color: blue;
+}
+a:active{
+    background-color: antiquewhite;
+    color: violet;
+}
+a:visited{
+    color: green;
+}
+li{
+    text-align: center;
+    display: inline;
+    background-color: aquamarine;
+    padding:10px;
+    
+}
+li a{
+    /* padding-left: 20px; */
+}
+.box{
+    width: 20%;
+    display: inline-block;
+    background-color: azure;
+}
+.boxcolor{
+    width: 100px;
+    height: 100px;
+}
+#box1{
+    background-color: yellow;
+    /* position: static; ค่าเดิม */
+    position: relative;
+    left: 30px;
+    top: 30px;
+    z-index:5000;
+}
+#box2{
+    background-color: red;
+    z-index: 1000;
+    position: absolute;
+    right: 10px;
+
+}
+#box3{
+    background-color: blue;
+    position: absolute;
+    z-index: ;
+    left: 50px;
+    top: 40px;
+}
+#box4{
+    background-color: green;
+    position: fixed;
+}
+#box5{
+    background-color: black!important;    /*!important เรียกใช้ก่อน !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    background-color: chartreuse ; 
+    position: sticky;
+    top: 0;
+    left: 100px;
+}
+.container{
+    width: 500px;
+    height: 200px;
+    background-color: #333;
+    z-index:;
+    position: relative; /*ถ้าลูกdivใช้absolute ต้องทีrelative*/
+}
+html{
+    scroll-behavior: smooth;
+}
+.boxp{
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    overflow: scroll; /*จำกัดเนื้อหาให้อยู่ในกล่องเนื้อหา*/
+    overflow-x: scroll; /*แนวตั้ง*/
+    overflow-y: scroll; /*แนวนอน*/
+    
+}
+.cursor{
+    font-size: 50px;
+    cursor: pointer;
+}
+.shadow{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin:50px;
+    box-shadow: 10px/*แนวนอน*/ 20px/*แนวตั้ง*/ 10px/*ความเบลอ*/ 20px/*ขนาด*/ red ,
+                          -5px -5px 10px 10px green; /*เพิ่มอีกฝั่ง*/
+
+}
+.opacity{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    
+}
+.opacity:hover{
+    opacity: 0.2;
+}
